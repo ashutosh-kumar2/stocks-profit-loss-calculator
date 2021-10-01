@@ -1,8 +1,122 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+
+:root {
+    --background-dark: #93C5FD;
+    --black: #000;
+  }
+  
+  html {
+    background-color: var(--background-dark);
+    color: var(--black);
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  body{
+    height: 100%;
+  }
+
+  * {
+    font-family: 'Urbanist', sans-serif;
+    margin: 0;
+  }
+  
+  h1 {
     text-align: center;
+    padding: 2rem 0rem;
+  }
+  
+  .container {
+    width: 50%;
+    margin: auto;
+  }
+  
+  label,
+  input {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  label { 
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+  
+  input {
+    display: block;
+    border-radius: 0.3rem;
+    padding: 1rem 0.5rem;
+    border: transparent;
+    font-size: 1.2rem;
+    margin: 1rem 0rem;
+  }
+  
+  
+  #submit-button {
+    background-color: var(--background-dark);
+    border: 2px solid var(--black);
+    color: var(--black);
+    padding: 0.4rem 1rem;
+    border-radius: 0.5rem;
+    font-size: large;
+    cursor: pointer;
+    outline: var(--black);
+    margin: auto;
+    display: block;
+  }
+  
+  #output-box {
+    display: block;
+    margin: auto;
+    margin: 1.5rem 0rem;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border-color: var(--black);
+    border-width: medium;
+    border-radius: 0.3rem;
+  }
+  
+  /* footer */
+  
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -6rem; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+  height: 6rem; /* .push must be the same height as .footer */
 }
 
-label{
-    display: block;
+  footer {
+    text-align: center;
+    width: 100%;
+  }
+  
+  footer p {
+    font-size: 1.4rem;
+    text-align: center;
     padding-bottom: 1rem;
-}
+  }
+  
+  footer ul {
+    padding-inline-start: 0px;
+    padding: 0.5rem 0rem;
+    margin: 0;
+  }
+  
+  a,
+  img,
+  li {
+    display: inline;
+    padding: 0rem 0.4rem;
+  }
+  
+  img {
+    width: 40px;
+    height: 40px;
+    padding: 0.2rem;  
+  }

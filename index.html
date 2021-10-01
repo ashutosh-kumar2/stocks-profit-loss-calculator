@@ -6,24 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Stonks | Ashutosh Kumar</title>
+    <title>Stocks | Ashutosh Kumar</title>
 </head>
 
 <body>
-    <h1>Where's my Stonks?</h1>
-    <main>
-        <label for="initial-price">Initial Price
-            <input id="initial-price" type="number" placeholder="Enter the price at which you bought the stock" />
-        </label>
-        <label for="stocks-quantity">Number of Stocks
-            <input id="stocks-quantity" type="number" placeholder="Enter the number of stocks you bought" />
-        </label>
-        <label for="current-price">Current Price
-            <input id="current-price" type="number" placeholder="Enter the current price of the stock" />
-        </label>
-        <button id="submit-button">Tell Me!!</button>
-        <div id="output-box"></div>
-    </main>
+    <div class="wrapper">
+        <h1>Where's my Stock?</h1>
+        <main class="container">
+            <label for="initial-price">Initial Price
+                <input id="initial-price" type="number" placeholder="Enter the price at which you bought the stock" />
+            </label>
+            <label for="stocks-quantity">Number of Stocks
+                <input id="stocks-quantity" type="number" placeholder="Enter the number of stocks you bought" />
+            </label>
+            <label for="current-price">Current Price
+                <input id="current-price" type="number" placeholder="Enter the current price of the stock" />
+            </label>
+            <button id="submit-button">Calculate</button>
+            <div id="output-box"></div>
+        </main>
+
+        <div class="push"></div>
+    </div>
+
+    <footer class="footer">
+        <p>© | 2021 | AshutoshKumar</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/kumar-ashutosh2/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/linkedin.svg" alt="linkedin"></a></li>
+            <li><a href="https://github.com/ashutosh-kumar2" target="_blank" rel="noopener noreferrer">
+                    <img src="images/github.svg" alt="github"></a></li>
+            <li><a href="https://twitter.com/ashutoshh_kk" target="_blank" rel="noopener noreferrer">
+                    <img src="images/twitter.svg" alt="twitter"></a></li>
+            <li><a href="https://hashnode.com/@ashutoshkumar" target="_blank" rel="noopener noreferrer">
+                    <img src="images/hashnode.svg" alt="hashnode"></a></li>
+            <li><a href="https://kumarashutosh.netlify.app/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/portfolio.svg" alt="portfolio"></a></li>
+        </ul>
+    </footer>
+
 
     <script src="script.js" type="text/javascript"></script>
 </body>

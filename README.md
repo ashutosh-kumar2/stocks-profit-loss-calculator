@@ -7,7 +7,7 @@ An app which helps user with how much profit or loss he/she is making through st
  - Enter the price at which you bought the stocks
  - Enter the quantity of stocks you bought
  - Enter the current price of your stocks
- - Click on the **Tell Me!** button
+ - Click on the **Calculate** button
  - Output will be shown below the button after its calculated
 
 # Programming Language:

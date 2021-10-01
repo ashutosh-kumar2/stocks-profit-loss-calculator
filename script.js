@@ -10,19 +10,20 @@ function calculateProfitAndLoss(initial, quantity, current)
     {
         var loss = (initial - current) * quantity;
         var lossPercentage = ((loss / initial) * 100).toFixed(2);
-        showOutput(`Hey! the loss is ${loss} and the loss perecentage is ${lossPercentage}%;`);
         outputBox.style.color = "red";
+        showOutput(`Whoops! Your loss is ${loss} and the loss percentage is ${lossPercentage}% 😞`);
     }
     else if (current > initial)
     {
         var profit = (current - initial) * quantity;
         var profitPercentage = ((profit / initial) * 100).toFixed(2);
-        showOutput(`Hey! the profit is ${profit} and the profit perecentage is ${profitPercentage}%`);
         outputBox.style.color = "green";
+        showOutput(`Yay! Your profit is ${profit} and the profit percentage is ${profitPercentage}% 🚀`);
     }
     else
     {
-        showOutput("No Pain No Gain & No Gain No Gain!");
+        outputBox.style.color = "black";
+        showOutput("No pain No gain, and No gain No pain! 😉");
     }   
 }
     
@@ -35,6 +36,7 @@ function submitHandler()
     {
         if(init < 0 || qty < 0 || curr < 0)
         {
+            outputBox.style.color = "black";
             showOutput("No negative values allowed!!");
         }
         else
@@ -42,6 +44,7 @@ function submitHandler()
     }
     else
     {
+        outputBox.style.color = "black";
         showOutput("Please fill out all the fields!");
     }
 }

@@ -27,7 +27,7 @@
   }
   
   .container {
-    width: 95%;
+    width: 50%;
     margin: auto;
   }
   
@@ -44,11 +44,10 @@
   }
   
   input {
-    display: block;
     border-radius: 0.3rem;
     padding: 1rem 0.5rem;
     border: transparent;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 1rem 0rem;
   }
   

@@ -27,7 +27,7 @@
   }
   
   .container {
-    width: 50%;
+    width: 60%;
     margin: auto;
   }
   
@@ -49,10 +49,6 @@
     border: transparent;
     font-size: 1rem;
     margin: 1rem 0rem;
-  }
-
-  input[placeholder]{
-    text-overflow: ellipsis;
   }
   
   #submit-button {
